@@ -1,0 +1,168 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+    color: #ffffff;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+}
+
+.logo {
+    font-size: 1.2rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+.heart-icon {
+    font-size: 1.5rem;
+    color: #ff6b6b;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    letter-spacing: 8px;
+    margin-bottom: 30px;
+    background: linear-gradient(90deg, #ff6b6b, #ffa8a8);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.hero-image {
+    max-width: 300px;
+    width: 100%;
+    height: auto;
+    margin: 20px 0;
+    filter: drop-shadow(0 10px 30px rgba(255, 107, 107, 0.3));
+}
+
+.tagline {
+    font-size: 1.1rem;
+    color: #b8c5d6;
+    margin: 20px 0 40px 0;
+    font-style: italic;
+    max-width: 400px;
+    line-height: 1.6;
+}
+
+.buttons {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.button {
+    padding: 15px 40px;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.button:hover {
+    transform: translateY(-2px);
+}
+
+.spotify {
+    background: #1db954;
+    color: #ffffff;
+    box-shadow: 0 4px 20px rgba(29, 185, 84, 0.4);
+}
+
+.apple {
+    background: linear-gradient(135deg, #fc3c44, #ff6b6b);
+    color: #ffffff;
+    box-shadow: 0 4px 20px rgba(252, 60, 68, 0.4);
+}
+
+.contact {
+    margin-top: 40px;
+    font-size: 0.9rem;
+    color: #8892a0;
+}
+
+footer {
+    padding: 20px;
+    text-align: center;
+    font-size: 0.8rem;
+    color: #5a6070;
+}
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2.5rem;
+        letter-spacing: 4px;
+    }
+    
+    .hero-image {
+        max-width: 200px;
+    }
+    
+    .buttons {
+        flex-direction: column;
+        width: 100%;
+        padding: 0 40px;
+    }
+    
+    .button {
+        width: 100%;
+    }
+}
+```
+
+### Step 3: Save the CSS file
+1. Press **Command + S**
+2. Navigate to your `falling4u-site` folder (same place as index.html)
+3. Name it exactly: `style.css`
+4. Click **Save**
+
+---
+
+## PART 4 — View Your Website
+
+### Option A: Double-click method
+1. Open your `falling4u-site` folder on the Desktop
+2. **Double-click** `index.html`
+3. It should open in Safari (or your default browser)
+
+### Option B: Drag to browser
+1. Open **Safari** (or Chrome)
+2. Drag `index.html` directly onto the browser window
+
+---
+
+## Your Final Folder Structure
+```
+Desktop/
+  └── falling4u-site/
+        ├── index.html
+        ├── style.css
+        └── assets/
+              └── airplane.png
