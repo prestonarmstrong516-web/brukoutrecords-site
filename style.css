@@ -1,0 +1,147 @@
+/* Reset + base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  min-height: 100svh;
+  font-family: Arial, sans-serif;
+
+  background-image: url("image.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-color: black;
+}
+
+/* Overlay */
+.overlay {
+  position: relative;
+  min-height: 100vh;
+  min-height: 100svh;
+
+  background: rgba(0, 0, 0, 0.4);
+
+  padding-top: env(safe-area-inset-top);
+  padding-bottom: env(safe-area-inset-bottom);
+}
+
+/* Centered music buttons */
+.buttons {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+
+  width: min(640px, calc(100% - 32px));
+  display: flex;
+  gap: 32px;
+  justify-content: center;
+}
+
+/* Music platform buttons */
+.btn {
+  width: 180px;
+  height: 120px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: white;
+  border-radius: 14px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  opacity: 0.85;
+}
+
+/* 🎵 Music logos — 2× bigger */
+.btn-logo {
+  width: 144px;
+  height: 144px;
+  object-fit: contain;
+}
+
+/* Bottom section */
+.bottom {
+  position: absolute;
+  left: 50%;
+  bottom: calc(24px + env(safe-area-inset-bottom));
+  transform: translateX(-50%);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+
+  width: min(520px, calc(100% - 32px));
+}
+
+/* Social icons row */
+.social-icons {
+  display: flex;
+  gap: 32px;
+}
+
+.social-icons a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* 📱 Social icons — 2× bigger */
+.social-icons img {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+  opacity: 0.9;
+}
+
+.social-icons a:hover img {
+  opacity: 1;
+}
+
+/* Email */
+.email {
+  color: white;
+  font-size: 13px;
+  opacity: 0.9;
+}
+
+/* Mobile behavior */
+@media (max-width: 600px) {
+  body {
+    background-size: contain;
+    background-position: center top;
+  }
+
+  .buttons {
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+  }
+
+  .btn {
+    width: 320px;
+    height: 140px;
+  }
+
+  .btn-logo {
+    width: 160px;
+    height: 160px;
+  }
+
+  .social-icons img {
+    width: 56px;
+    height: 56px;
+  }
+
+  .email {
+    font-size: 14px;
+  }
+}
